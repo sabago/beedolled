@@ -115,6 +115,6 @@ app.get('*', (req, res) => {
   res.redirect('/')
 })
 
-http.createServer(app).listen(app.get('port'), () =>
+http.createServer(app).listen(process.env.PORT || app.get('port'), () =>
   console.log('Server running at: ' + app.get('port'))
 )
