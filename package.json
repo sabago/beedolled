@@ -7,7 +7,6 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "webpack",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
