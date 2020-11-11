@@ -42,6 +42,7 @@
     "cors": "^2.8.4",
     "cosmicjs": "^2.4.0",
     "date-fns": "^2.0.0-beta.5",
+    "dotenv": "^8.2.0",
     "emailjs-com": "^2.6.3",
     "express": "^4.17.1",
     "express-session": "^1.15.5",
