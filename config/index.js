@@ -5,6 +5,7 @@
 const path = require('path');
 console.log("path", path);
 
+// if (process.env.NODE_ENV !== 'production') require('dotenv').config()
 const env = require('dotenv').config({path: '.env'});
 console.log("env: ", env);
 
