@@ -1,0 +1,80 @@
+.treat-call {
+    position: relative; /* places this div on top*/
+    top: -140px; /* Position the div on the top */
+    right: 0; /* Position the div on the right */
+    bottom: 0; /* Position the div on the bottom */
+    left: 0; /* Position the div on the left */
+    background: red; 
+    /* margin: 80px; Makes sure you can see the other dives */
+    height: auto; /* Add the viewport height minus the top and bottom*/margin: 0 auto;
+    max-width: 420px;
+    /* min-width: 360px; */
+    z-index: 1;
+    padding-bottom: 5px;
+}
+  
+.treat-call h2, h3, h1 {
+    color: white;
+    padding-top: 20px;
+    margin-top: 10px;
+    font-size: 36px;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+
+.treat-call span {
+    color: black;
+    font-weight: 600;
+} 
+  
+.treat-call-book {
+    color: goldenrod;
+}
+
+#socials h1 {
+    color: red;
+}
+
+#socials {
+    margin-bottom: 200px;
+    padding: 25px 50px;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color: black;
+}
+
+@media(max-width: 365px) {
+    #socials {
+        margin-bottom: 240px !important;
+    }
+}
+/* .home {
+    min-height: 100vh; /* will cover the 100% of viewport
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px; /* height of your footer
+} */

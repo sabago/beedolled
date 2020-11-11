@@ -1,0 +1,189 @@
+#services {
+  background: black;
+  top: -480px;
+  position: relative;
+  height: auto;
+  width: auto;
+  padding-top: 380px;
+  padding-bottom: 20px;
+}
+  
+  
+.container{
+  width:250px;
+  height:250px;
+  overflow:hidden;
+  padding-top: 100px;
+  transform:rotate(225deg)
+}
+
+.services-container {
+  padding-top: 7%;
+  padding-bottom: 25%;
+}
+  
+.row { margin: -18.5% 0; text-align: center; }
+.row:first-child { margin-top: 5%; }
+  
+.hex-image {
+  width: 320px;
+  height: 290px;
+  /* background: transparent url("http://recapnotes.com/wp-content/uploads/2017/07/lime-2133091_640.jpg") no-repeat;  
+  background-size: cover;
+  background-position: center center;*/
+  /* position: relative; */
+  margin: 50px auto; /* centering */
+  left: 1%;
+  transform: rotate(0deg); /* need to rotation ? */
+}
+/* Left shape*/
+.hex-image:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 0;
+  height: 3px;    
+  border-right: 85px solid transparent;
+  border-bottom: 150px solid  black;
+  border-top: 150px solid black;
+}
+/* Right shape*/
+.hex-image:after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 0;
+  height: 3px;    
+  border-left: 85px solid transparent;
+  border-bottom: 150px solid black;
+  border-top: 150px solid black;
+} 
+  
+@media(max-width: 1200px){
+  .services-container {
+    padding-top: 0px;
+    padding-bottom: 10%
+  }
+  .services-row, .hex{
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+  }
+  .hex {
+    margin-top: 0px !important;
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .hex3 {
+    margin-top: -10px;
+  }
+  .hex2 {
+    margin-top: 60%;
+  }
+  .hex4{
+    margin-top: 40% !important;
+  }
+}
+
+@media(max-width: 1500px) {
+  #argh {
+    margin-left: 10%;
+    margin-right: 0px;
+  }
+}
+
+@media(max-width: 770px) {
+  .experts-h2 {
+    margin-left: 0 !important;
+  }
+  .services-col {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .services-col2 {
+    margin-left: -18px;
+  }
+  .hex2 {
+    margin-top: 15%;
+  }
+  .hex4 {
+    margin-top: 18% !important;
+  } 
+  #before-microblade-img {
+    width: 100% !important;
+  }
+}
+
+.services-book {
+  color: goldenrod;
+}
+
+.services-book-h2 {
+  margin-top: 20%;
+  margin-bottom: 1%;
+  color: white;
+}
+
+.services-col h2, .services-col2 h2 {
+  color: white;
+}
+
+#makeup-h2 {
+  padding-top: 30px;
+}
+
+#services-h2 {
+  color: black;
+  font-weight: 600;
+}
+
+#microblading-h2 {
+  transform: rotate(-90deg); 
+  margin-left: 100px;
+}
+
+.services-container2 {
+  height: auto;
+}
+
+.services-container2-div {
+  position: relative;
+  text-align: center;
+}
+
+.services-container2 img {
+  border-radius: 50px;
+  width: 100%;
+}
+
+.before-h2, .after-h2 {
+    width: 10px;
+    height: 16px;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 40%;
+}
+
+.after-h2 {
+  margin-left: 30% !important;
+}
+
+#before-microblade-img {
+  width: 130%;
+}
+
+.microblade-experts-col {
+  color: white; 
+  display: flex;
+  padding-left: 11%;
+  align-items: center;
+  justify-content: center;
+}
+
+.experts-h2 {
+  margin-left: 42%;
+  /* z-index: 1; */
+}

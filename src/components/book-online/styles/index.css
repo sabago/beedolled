@@ -1,0 +1,59 @@
+.main-book-h1 {
+    color: red;
+}
+
+.stepButton {
+    color: red;
+}
+
+.stepButton>span>span>svg {
+    color: red;
+}
+
+.MuiButton-root {
+    background-color: blue;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    padding: 7px 14px;
+  }
+
+.MuiButton-root:hover {
+    background-color: blue;
+}
+
+.Button {
+    height: auto !important;
+    min-height: 42px !important;
+}
+
+.Button:disabled { /* Increase the specificity */
+    color: white !important;
+  }
+
+.MuiStepIcon-root.MuiStepIcon-active, .MuiStepIcon-root.MuiStepIcon-completed  {
+    color: red !important;
+}
+
+.MuiPickersToolbar-toolbar, 
+.MuiPickersDay-daySelected,
+/* .MuiPickersDay-current, */
+.MuiButton-textPrimary {
+    background-color: red !important;
+    color: white !important;
+}
+
+.book-section {
+    width: 50%;
+    /* margin-bottom: 180px !important; */
+}
+
+/* @media(max-width: 365px) {
+    .book-section {
+        margin-bottom: 240px !important;
+    }
+} */
+
+@media(max-width: 770px){
+    .book-section {
+        width: 90%;
+    }
+}

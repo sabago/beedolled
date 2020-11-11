@@ -1,0 +1,10 @@
+#about >img {
+    border-radius: 50%;
+    /* margin-top: 40px; */
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    height: auto;
+    /* float: left; */
+    /* display:inline-block; */
+  }
