@@ -3,21 +3,23 @@
 // module.exports = config
 
 const path = require('path');
-console.log("path", path);
+// console.log("path", path);
 
 // if (process.env.NODE_ENV !== 'production') require('dotenv').config()
 const env = require('dotenv').config({path: '.env'});
-console.log("env: ", env);
+// console.log("env: ", env);
 
 const configPath = path.join(__dirname, '..', 'config/production');
-console.log("configPath: ", configPath);
+// console.log("configPath: ", configPath);
 
 const configObj = require(configPath);
-console.log("configObj: ", configObj);
+// console.log("configObj: ", configObj);
 
 const config = configObj[env];
-console.log("config: ", config);
+// console.log("config: ", config);
 
 // const env = process.env.NODE_ENV || 'development'
 // const config = require('./' + env)
+
+configObj.logger = Logger.new(STDOUT);
 module.exports = configObj
