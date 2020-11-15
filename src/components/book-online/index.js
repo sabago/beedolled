@@ -198,7 +198,7 @@ export default function BookOnline() {
         
         const filledSlotsNumbers = filledSlots.map(Number);
         let slotFilled;
-        if(bookedAppointments){bookedAppointments.map(bookedAppointment => { (bookedAppointment.date === appointmentDateString) && (slotFilled = filledSlotsNumbers.includes(slot)) })}
+        bookedAppointments.map(bookedAppointment => { (bookedAppointment.date === appointmentDateString) && (slotFilled = filledSlotsNumbers.includes(slot)) })
 
         return <RadioButton
           label={t1.format('h:mm a') + ' - ' + t2.format('h:mm a')}
@@ -260,7 +260,9 @@ export default function BookOnline() {
     addEventListener('resize', resize);
     return removeEventListener('resize', resize);
   },[])
-
+console.log("****bookedAppointments", bookedAppointments);
+console.log('****filledSlots', filledSlots);
+console.log("*****fullDays", fullDays);
   const contactFormFilled = firstName && lastName && phone && email && validPhone && validEmail
   const labelColor={color: 'red'}
   const classes = useStyles();
