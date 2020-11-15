@@ -44,8 +44,8 @@ const useStyles = makeStyles({
   },
 });
 
-// const HOST = PRODUCTION ? '/' : 'http://localhost:3000/';
-const HOST = '/';
+const HOST = PRODUCTION ? '/' : 'http://localhost:3000/';
+// const HOST = '/';
 
 export default function BookOnline() {
   const [loading, setLoading]  = useState(false);
@@ -63,6 +63,7 @@ export default function BookOnline() {
   const [bookedAppointments, setBookedAppointments] = useState([]); //used to disable already booked slots
   const [fullDays, setFullDays] = useState([]); //tracks full days
   const [filledSlots, setFilledSlots] = useState([]);
+  const [bookedDatesObj, setBookedDatesObj] = useState({});
 
   const [confirmationSnackbarMessage, setConfirmationSnackbarMessage] = useState("");
   const [appointmentDate, setAppointmentDate] = useState();
@@ -198,8 +199,22 @@ export default function BookOnline() {
         
         const filledSlotsNumbers = filledSlots.map(Number);
         let slotFilled;
-        bookedAppointments.map(bookedAppointment => { (bookedAppointment.date === appointmentDateString) && (slotFilled = filledSlotsNumbers.includes(slot)) })
-
+        // for (let i=0; i<bookedAppointments.length; i++) {
+        //   if(bookedAppointments[i].date === appointmentDateString) {
+        //     slotFilled = filledSlotsNumbers.includes(slot);
+        //   }
+        // }
+        //bookedAppointments.map(bookedAppointment => { (bookedAppointment.date === appointmentDateString) && (slotFilled = filledSlotsNumbers.includes(slot)) })
+       // console.log("***slotFilled", slotFilled);
+        for (let bookedDay in bookedDatesObj) {
+          let obj = bookedDatesObj[bookedDay];
+          (bookedDay === appointmentDateString) && (slotFilled = Object.values(obj).map(Number).includes(slot));
+        }
+          // (obj.length === 8) && setFullDays(fullDays => [...fullDays, bookedDay]);
+          // setFilledSlots(Object.values(obj)); 
+        }
+        console.log("***slotFilled", slotFilled);
+        console.log("***obj values", bookedDatesObj)
         return <RadioButton
           label={t1.format('h:mm a') + ' - ' + t2.format('h:mm a')}
           key={slot}
@@ -247,7 +262,8 @@ export default function BookOnline() {
         (obj.length === 8) && setFullDays(fullDays => [...fullDays, bookedDay]);
         setFilledSlots(Object.values(obj)); 
       }
-
+      setBookedDatesObj(bookedDatesObj);
+          console.log("***bookedDatesObj", bookedDatesObj);
       const config = await axios.get(HOST + 'api/config');
       const configData = config.data.data;      
       return {appointmentData, configData};
