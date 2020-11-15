@@ -212,7 +212,7 @@ export default function BookOnline() {
         }
           // (obj.length === 8) && setFullDays(fullDays => [...fullDays, bookedDay]);
           // setFilledSlots(Object.values(obj)); 
-        }
+        // }
         console.log("***slotFilled", slotFilled);
         console.log("***obj values", bookedDatesObj)
         return <RadioButton
