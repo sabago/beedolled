@@ -75,12 +75,8 @@ export function Contact()  {
           subject: state.subject,
           message: state.message,
         };
-        
-        const service_id = process.env.EMAILJS_SERVICEID;
-        const template_id = process.env.EMAILJS_TEMPLATEID;
-        const user_id = process.env.EMAILJS_USERID;
 
-        emailjs.send(service_id, template_id, templateParams, user_id);
+        emailjs.send('service_p29mryi', 'template_b5wg8r7', templateParams, 'user_Iza8lLVZ2tkUfZ5STVrwz');
   
         console.log(`
           --SUBMITTING--
