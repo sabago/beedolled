@@ -17,7 +17,7 @@ export class SpecialOffers extends React.Component {
                 <Col lg={4} className="refer-col">
                   <img  className="special-offers-img" src="https://res.cloudinary.com/sabago/image/upload/c_scale,w_560/v1602697788/beefriend_ldxlyr.jpg"/>
                   <h2 className="heavy-text"><span className="black-text">REFER</span> A FRIEND</h2>
-                  <h2 className="black-text">We love our guests and want more just like you! When you refer a friend to Beddolled, we’ll give you a 5% off as our way of saying thanks.</h2>
+                  <h2 className="black-text">We love our guests and want more just like you! When you refer a friend to Beedolled, we’ll give you a 5% off as our way of saying thanks.</h2>
                 </Col>
                 <Col lg={4}>
                   <img  className="special-offers-img" src="https://res.cloudinary.com/sabago/image/upload/c_scale,h_388,w_600/v1602698126/beeworking_evbriu.jpg"/>

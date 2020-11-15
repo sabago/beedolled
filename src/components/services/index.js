@@ -51,7 +51,7 @@ export class Services extends React.Component{
                     display: "flex",
                     justifyContent:"center"
                   }}>
-                    <h2 id="microblading-h2">Miroblading</h2>
+                    <h2 id="microblading-h2">Microblading</h2>
                   </div>
                 </Col>
               </Row>
