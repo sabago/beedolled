@@ -45,6 +45,7 @@ const useStyles = makeStyles({
 });
 
 const logger = require('heroku-logger');
+config.logger = Logger.new(STDOUT);
 const HOST = PRODUCTION ? '/' : 'http://localhost:3000/';
 // const HOST = '/';
 
