@@ -260,7 +260,9 @@ export default function BookOnline() {
     addEventListener('resize', resize);
     return removeEventListener('resize', resize);
   },[])
-
+console.log("****ApointmentData", appointmentData);
+console.log('****filledSlots', filledSlots);
+console.log("*****fullDays", fullDays);
   const contactFormFilled = firstName && lastName && phone && email && validPhone && validEmail
   const labelColor={color: 'red'}
   const classes = useStyles();

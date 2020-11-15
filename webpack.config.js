@@ -1,5 +1,4 @@
 const path = require('path')
-console.log("webpack path",path);
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
 // const dotenv = require('dotenv').config({path: __dirname + '/.env'})
