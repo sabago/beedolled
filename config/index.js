@@ -20,7 +20,4 @@ const config = configObj[env];
 
 // const env = process.env.NODE_ENV || 'development'
 // const config = require('./' + env)
-
-// const Logger = require('heroku-logger').Logger;
-// configObj.logger = Logger.new(STDOUT)
 module.exports = configObj

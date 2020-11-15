@@ -44,10 +44,7 @@ const useStyles = makeStyles({
   },
 });
 
-const logger = require('heroku-logger');
-
 const HOST = PRODUCTION ? '/' : 'http://localhost:3000/';
-// const HOST = '/';
 
 export default function BookOnline() {
   const [loading, setLoading]  = useState(false);
@@ -201,22 +198,13 @@ export default function BookOnline() {
         
         const filledSlotsNumbers = filledSlots.map(Number);
         let slotFilled;
-        // for (let i=0; i<bookedAppointments.length; i++) {
-        //   if(bookedAppointments[i].date === appointmentDateString) {
-        //     slotFilled = filledSlotsNumbers.includes(slot);
-        //   }
-        // }
         //bookedAppointments.map(bookedAppointment => { (bookedAppointment.date === appointmentDateString) && (slotFilled = filledSlotsNumbers.includes(slot)) })
-       // console.log("***slotFilled", slotFilled);
+      
         for (let bookedDay in bookedDatesObj) {
           let obj = bookedDatesObj[bookedDay];
           (bookedDay === appointmentDateString) && (slotFilled = Object.values(obj).map(Number).includes(slot));
         }
-          // (obj.length === 8) && setFullDays(fullDays => [...fullDays, bookedDay]);
-          // setFilledSlots(Object.values(obj)); 
-        // }
-        console.log("***slotFilled", slotFilled);
-        console.log("***obj values", bookedDatesObj)
+
         return <RadioButton
           label={t1.format('h:mm a') + ' - ' + t2.format('h:mm a')}
           key={slot}
@@ -278,10 +266,7 @@ export default function BookOnline() {
     addEventListener('resize', resize);
     return removeEventListener('resize', resize);
   },[])
-console.log("****bookedAppointments", bookedAppointments);
-console.log('****filledSlots', filledSlots);
-console.log("*****fullDays", fullDays);
-console.log("****host", HOST);
+
   const contactFormFilled = firstName && lastName && phone && email && validPhone && validEmail
   const labelColor={color: 'red'}
   const classes = useStyles();
