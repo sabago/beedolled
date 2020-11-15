@@ -198,7 +198,7 @@ export default function BookOnline() {
         
         const filledSlotsNumbers = filledSlots.map(Number);
         let slotFilled;
-        bookedAppointments.map(bookedAppointment => { (bookedAppointment.date === appointmentDateString) && (slotFilled = filledSlotsNumbers.includes(slot)) })
+        if(bookedAppointments){bookedAppointments.map(bookedAppointment => { (bookedAppointment.date === appointmentDateString) && (slotFilled = filledSlotsNumbers.includes(slot)) })}
 
         return <RadioButton
           label={t1.format('h:mm a') + ' - ' + t2.format('h:mm a')}
