@@ -44,7 +44,8 @@ const useStyles = makeStyles({
   },
 });
 
-const HOST = PRODUCTION ? '/' : 'http://localhost:3000/';
+// const HOST = PRODUCTION ? '/' : 'http://localhost:3000/';
+const HOST = '/';
 
 export default function BookOnline() {
   const [loading, setLoading]  = useState(false);
