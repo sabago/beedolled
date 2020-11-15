@@ -281,7 +281,7 @@ export default function BookOnline() {
 console.log("****bookedAppointments", bookedAppointments);
 console.log('****filledSlots', filledSlots);
 console.log("*****fullDays", fullDays);
-logger.info("****bookedAppointments", bookedAppointments)
+console.log("****host", HOST);
   const contactFormFilled = firstName && lastName && phone && email && validPhone && validEmail
   const labelColor={color: 'red'}
   const classes = useStyles();
