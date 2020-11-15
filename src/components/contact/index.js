@@ -76,9 +76,9 @@ export function Contact()  {
           message: state.message,
         };
         
-        const service_id = process.env.REACT_APP_EMAILJS_SERVICEID;
-        const template_id = process.env.REACT_APP_EMAILJS_TEMPLATEID;
-        const user_id = process.env.REACT_APP_EMAILJS_USERID;
+        const service_id = process.env.EMAILJS_SERVICEID;
+        const template_id = process.env.EMAILJS_TEMPLATEID;
+        const user_id = process.env.EMAILJS_USERID;
 
         emailjs.send(service_id, template_id, templateParams, user_id);
   

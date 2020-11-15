@@ -253,7 +253,6 @@ export default function BookOnline() {
         setFilledSlots(Object.values(obj)); 
       }
       setBookedDatesObj(bookedDatesObj);
-          console.log("***bookedDatesObj", bookedDatesObj);
       const config = await axios.get(HOST + 'api/config');
       const configData = config.data.data;      
       return {appointmentData, configData};
