@@ -48,6 +48,7 @@
     "express-session": "^1.15.5",
     "font-awesome": "^4.7.0",
     "fs": "0.0.1-security",
+    "heroku-logger": "^0.3.3",
     "html-webpack-plugin": "^4.5.0",
     "http": "^0.0.0",
     "mdbreact": "^4.27.0",
