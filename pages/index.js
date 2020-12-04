@@ -67,7 +67,7 @@ await axios.post(`https://graphql.cosmicjs.com/v1`, { query })
       <div className="blog">
          <Header cosmic={ this.state.cosmic }/>
          <main className="container">
-           <h1 style={{fontFamily:"didot"}}> COMING SOON!</h1>
+           <h1 style={{fontFamily:"didot", margin:"200px auto"}}> COMING SOON!</h1>
            {/* {
             !this.state.cosmic.posts &&
             'You must add at least one Post to your Bucket'

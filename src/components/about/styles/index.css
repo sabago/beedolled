@@ -1,10 +1,28 @@
+
+#about {
+  background-color: black;
+  color: white;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  /* position:"relative";
+  top:450; */
+}
+.about-span {
+  color: red;
+  font-size: 36px;
+  font-family: "Brush Script MT";
+}  
+
 #about >img {
-    border-radius: 50%;
-    /* margin-top: 40px; */
-    width: 100%;
-    max-width: 600px;
-    min-width: 300px;
-    height: auto;
-    /* float: left; */
-    /* display:inline-block; */
-  }
+  border-radius: 50%;
+  /* margin-top: 40px; */
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+  height: auto;
+  /* float: left; */
+  /* display:inline-block; */
+}

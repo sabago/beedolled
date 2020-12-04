@@ -14,7 +14,6 @@ export default class extends React.Component {
       </Head>,
       <header className="header" key={2}>
         <h1 className="site-title">
-          Beedolled's Blog
           {/* <a href="/">{ this.props.cosmic.global.header.metadata.site_title }</a>
           <small className="site-title__tag">{ this.props.cosmic.global.header.metadata.site_tag }</small> */}
         </h1>

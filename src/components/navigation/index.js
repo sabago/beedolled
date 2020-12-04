@@ -53,7 +53,8 @@ export function Navigation() {
               <NavHashLink key="contact-us" smooth to="/#contact" style={{color: linkColor}} activeStyle={{color:"red"}} className="menu-link">CONTACT</NavHashLink>
               <NavHashLink key="book-online" smooth to="/#book-online" style={{color: linkColor}} activeStyle={{color:"red"}} className="menu-link" scroll={el => scrollWithOffset(el)}>BOOK ONLINE</NavHashLink>
               <Link to="/blog" style={{color: linkColor}} className="menu-link">BLOG</Link>
-              <Link to="/accessories" style={{color: linkColor}} className="menu-link" >ACCESSORIES</Link>               
+              {/* <Link to="/accessories" style={{color: linkColor}} className="menu-link" >ACCESSORIES</Link> */}
+              <a style={{color: linkColor}} activeStyle={{color:"red"}} className="menu-link" target="_blank" href="http://monabwatches.com/store">ACCESORIES</a>               
             </Nav>
             </Navbar.Collapse>
         </Navbar>

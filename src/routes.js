@@ -25,7 +25,7 @@ export default class Routes extends React.Component {
                     <Route path="/contact-us" component={Contact} />
                     <Route path="/book-online" component={BookOnline} />
                     <Route path="/blog" component={Blog}/>
-                    <Route path="/accessories" component={Accessories} />
+                    {/* <Route path="/accessories" component={Accessories} /> */}
                 </Switch>
                 </ScrollToTop>
              </Router> 

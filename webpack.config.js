@@ -41,7 +41,8 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html',
       inject: true,
-      xhtml: true
+      xhtml: true,
+      favicon: "./src/favicon.png"
     }),
     new webpack.ProvidePlugin({
       "React": "react",
@@ -52,6 +53,7 @@ module.exports = {
     new webpack.DefinePlugin({
       PRODUCTION: JSON.stringify(process.env.NODE_ENV || 'production')
     })
+
     // new webpack.DefinePlugin({
     //   PRODUCTION: process.env.NODE_ENV === JSON.stringify('production')
     // })
