@@ -115,6 +115,10 @@ app.get('*', (req, res) => {
   res.redirect('/')
 })
 
+router.get('/.well-known/acme-challenge/Qp_jyiZ6MT2vQFqHmoGiBX5xzNNNJZnsSjHrvB3V4ys', (req, res)=>{
+  res.send('Qp_jyiZ6MT2vQFqHmoGiBX5xzNNNJZnsSjHrvB3V4ys.kJeIFUkF4nbI_3FIYOj4KxrYBvV0zwZCPQYn9UFVE1o');
+ })
+
 http.createServer(app).listen(process.env.PORT || app.get('port'), () =>
   console.log('Server running at: ' + app.get('port'))
 )
